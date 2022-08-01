@@ -12,7 +12,8 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 17.01
+          java-version: '17'
+          distribution: 'adopt'
       - id: get-project
         name: Get project name
         run: echo "::set-output name=PROJECT::$(cat project-to-build)"
